@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntercambioDisparoPW", "IntercambioDisparoPW\IntercambioDisparoPW.csproj", "{55A4E3E2-17F9-4BC1-B533-A877BFAB3BC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55A4E3E2-17F9-4BC1-B533-A877BFAB3BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A4E3E2-17F9-4BC1-B533-A877BFAB3BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A4E3E2-17F9-4BC1-B533-A877BFAB3BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A4E3E2-17F9-4BC1-B533-A877BFAB3BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EBE70C8-1DE1-4B82-AF17-EA1A0266F452}
+	EndGlobalSection
+EndGlobal
