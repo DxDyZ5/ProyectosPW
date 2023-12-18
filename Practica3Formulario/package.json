@@ -1,0 +1,11 @@
+{
+  "name": "practica3formulario",
+  "version": "1.0.0",
+  "description": "Servidor en proyecto",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch DATOS.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "cedula": "40234220131",
+      "telefono": "809-403-3901",
+      "correo": "facu@gmail.com",
+      "direccion": "Avenida Fernandez calle 12",
+      "estadoCivil": "casado",
+      "profesion": "Web Developer",
+      "motivo": "Servicio de 5 años en el gobierno.",
+      "id": 1
+    }
+  ],
+  "Login": {
+    "password": "123456789"
+  },
+  "Referencias": [
+    {
+      "referencia1": "Loren Rafael",
+      "referencia2": "Franklin Rodriguez",
+      "referencia3": "Carlos Enriquez",
+      "referencia4": "Francisa Ramirez",
+      "id": 1
+    }
+  ]
+}

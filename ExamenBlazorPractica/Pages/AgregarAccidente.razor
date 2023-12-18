@@ -1,0 +1,47 @@
+@page "/agregaraccidente"
+@using ExamenBlazorPractica
+
+<h1 style="text-align: center;">Agregar Accidente</h1>
+<!---->
+<form>
+    <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="fecha" @bind="nuevoAccidente.Fecha" />
+        <label for="fecha">Fecha accidente</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="descripcion" @bind="nuevoAccidente.Descripcion" required />
+        <label for="descripcion">Descripción</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="costo" @bind="nuevoAccidente.CostoEconomico" required />
+        <label for="costo">Costo Económico</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="muertos" @bind="nuevoAccidente.Muertos" required />
+        <label for="muertos">Muertos</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="heridos" @bind="nuevoAccidente.Heridos" required />
+        <label for="heridos">Heridos</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="vehiculos" @bind="nuevoAccidente.CantidadVehiculos" required />
+        <label for="vehiculos">Cantidad de Vehículos</label>
+    </div>
+
+    <button type="submit" class=" form-control btn btn-outline-secondary" @onclick="AgregarAccidentes">Registrar
+        Accidente</button>
+</form>
+
+@code {
+    private Accidente nuevoAccidente = new Accidente();
+
+    [Inject]
+    private AccidenteService accidenteService { get; set; } = new AccidenteService();
+
+    private void AgregarAccidentes()
+    {
+        accidenteService.AgregarAccidente(nuevoAccidente);
+        nuevoAccidente = new Accidente();
+    }
+}

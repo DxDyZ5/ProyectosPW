@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    overflow-x: hidden;
+    
+}
+
+
+.SIGNS{
+    margin: 60px  auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.SIGNS li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.SIGNS li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.SIGNS .content{
+    color: #555;
+    padding: 0 10 px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.5s, padding 0.5s; 
+}
+
+.SIGNS input[type="checkbox"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+
+}
+
+.SIGNS input[type="checkbox"]:checked + label::before{
+    content: '-';   
+}
+
+.movie-general{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    position: fixed;
+    top: 1px;
+}
+
+
+  footer {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .08);
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 20% 5%;
+  } 
+
+  .image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover{
+    color: #B59E6E;
+  }
+
+  h1:hover{
+    color: #B59E6E;
+  }
+ 
+label:hover{
+    color: #B59E6E;
+}

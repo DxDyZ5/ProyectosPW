@@ -1,0 +1,40 @@
+@page "/"
+@page "/dashboard"
+@inject AccidenteService accidenteService
+
+<h1>Dashboard</h1>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total de Accidentes</h5>
+                <p class="card-text">@accidenteService.GetAccidentes().Count</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total de Vehículos Involucrados</h5>
+                <p class="card-text">@accidenteService.GetAccidentes().Sum(a => a.CantidadVehiculos)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total de Muertos</h5>
+                <p class="card-text">@accidenteService.GetAccidentes().Sum(a => a.Muertos)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total de Heridos</h5>
+                <p class="card-text">@accidenteService.GetAccidentes().Sum(a => a.Heridos)</p>
+            </div>
+        </div>
+    </div>
+</div>

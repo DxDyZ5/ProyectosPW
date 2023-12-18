@@ -1,0 +1,31 @@
+@page "/accidentes"
+@using ExamenBlazorPractica
+@inject AccidenteService accidenteService
+
+<h1>Lista de Accidentes</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Descripción</th>
+            <th>Costo Económico</th>
+            <th>Muertos</th>
+            <th>Heridos</th>
+            <th>Vehículos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var accidente in accidenteService.GetAccidentes())
+        {
+            <tr>
+                <td>@accidente.Fecha.ToShortDateString()</td>
+                <td>@accidente.Descripcion</td>
+                <td>@accidente.CostoEconomico</td>
+                <td>@accidente.Muertos</td>
+                <td>@accidente.Heridos</td>
+                <td>@accidente.CantidadVehiculos</td>
+            </tr>
+        }
+    </tbody>
+</table>
